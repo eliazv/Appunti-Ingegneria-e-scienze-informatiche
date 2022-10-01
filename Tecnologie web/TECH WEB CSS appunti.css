@@ -1,0 +1,572 @@
+/*APPUNTI*/
+
+body{
+  font-family: Arial, Helvetica, sans-serif;  /* tutti lo stesso font: arial  */
+  font-size: 100%;  /* dimensione */
+}
+
+form>input{
+  float: right;
+  width: 40%;
+  background-color: blue;
+  color: white;
+  text-decoration: overline;  /* sottolineato */
+  font-weight: bold; /*grassetto*/
+  border-radius: 5px; /*arrotondato*/
+  padding: 10px 0;
+  margin-top: 5%;
+  transform: rotate(-10deg);  /* rotazione di ... */
+  transition-duration: 3s; /* durata transizione */
+  box-shadow: 5px -5px 10px grey; /*ombreggiatura: x y sfocatura colore  (destra, alto, sfocato di grigio)*/
+}
+
+h1, legend{/*elementi in comune*/
+  float:right;
+  background-color: darkblue;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+h1{/*elementi specifici*/
+  padding: 1px 0;
+}
+
+legend{/*elementi specifici*/
+  padding: 10px 1%;
+}
+
+
+fieldset{
+  border: dotted blue; /* bordo a puntini blu */
+  box-sizing: border-box;
+}
+
+fieldset:first-of-type{ /*  primo elemento di tipo fieldset */
+  float:right;
+  width: 40%;
+  padding: 1% 2%;
+}
+
+fieldset:first-of-type label{ /* ?  */
+  display: block; /* un blocco che occupa tutta la linea  */
+  width: 100%;
+  text-align: center;
+}
+
+fieldset:first-of-type input{ /* ?  */
+  display: block;
+  width: 100%;
+}
+
+fieldset:last-of-type{  /* ultimo elemento di tipo fieldset */
+  float:left;
+  width: 50%;
+}
+
+fieldset:last-of-type>label{ /* ?  */
+  display: block;
+}
+
+
+
+#forlì, #imola, td[headers~="forlì"], td[headers~="imola"]{ /* prende id e colonne td che contengono nell'header le parole forli e imola */
+}
+
+ul{
+  list-style: square;
+}
+
+figure{ /*immagini*/
+  text-align: center;
+}
+
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid green; /* bordo inferiore, solid = continuo */
+  box-sizing: border-box;
+}
+
+input[type=submit], input[type=reset]  {  /* prende solo iil bottone tramite l'attributo type */
+  width: 100%;
+  background-color: green;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+table{
+  border: solid black 2px;
+  border-collapse: collapse;
+}
+
+table th, table td{
+  border: solid grey 1px;
+}
+
+#carne{ /*prende in base all'id*/
+  background-color: lightyellow;
+}
+
+#fresca, #conservata{
+  background-color: lightcoral;
+}
+
+#bovino, #pollame, #suino{
+  background-color: lightskyblue;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*  20-02-21  */
+h1{
+    text-decoration: underline overline;  /* testo sottolineato e sopralineato */
+    margin-left: 20%;
+}
+
+fieldset{
+    border: dotted blue; /* bordo a puntini blu */
+    box-sizing: border-box;
+}
+
+fieldset:first-of-type{ /*  primo elemento di tipo fieldset? */
+    float:right;
+    width: 40%;
+    padding: 1% 2%;
+}
+
+fieldset:first-of-type label{
+    display: block; /* ?  */
+    width: 100%;
+    text-align: center;
+}
+
+fieldset:first-of-type input{
+    display: block;
+    width: 100%;
+}
+
+fieldset:last-of-type{
+    float:left;
+    width: 50%;
+}
+
+fieldset:last-of-type>label{
+    display: block;
+}
+
+form>input{
+    float: right;
+    width: 40%;
+    background-color: blue;
+    color: white;
+    text-decoration: overline;  /* sottolineato */
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 5%;
+    transform: rotate(-10deg);  /* rotazione di ... */
+}
+
+
+
+
+/*  20-01-29  */
+table, th, td{
+    border: black solid;
+    border-collapse: collapse;
+}
+
+#studenti, #rimini, td[headers~="rimini"]{ /* prende id e colonne td che contengono nell'header rimini */
+    background-color: yellow;
+}
+
+#primo, #secondo{   /* prendo grazie agli id */
+    background-color: red;
+}
+
+#forlì, #imola, td[headers~="forlì"], td[headers~="imola"]{ /* prende id e colonne td che contengono nell'header le parole forli e imola */
+    background-color: blue;
+    color: white; /* colore del testo */
+}
+
+td[headers="studenti primo secondo cesena"]:hover{  /* TRANSIZIONE hover = passaggio del mouse  */
+    font-weight: bold;
+    color: blue;
+    background-color: yellow;
+    font-size: 150%; /* ingrandisce testo */
+    transition-duration: 3s; /* durata transizione */
+}
+
+
+
+
+
+
+/* 20-01-10 */
+body{
+    font-family: Arial, Helvetica, sans-serif;  /* tutti lo stesso font: arial  */
+    font-size: 100%;  /* dimensione */
+}
+
+h1{
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    border: dashed blue 2px;
+    border-radius: 25px;
+    padding: 20px 0;
+}
+
+header{ 
+    margin-left: 3%;
+    width: 94%;
+}
+
+nav{
+    width: 92%;
+    text-align: center;
+}
+
+li{
+    border: solid blue 2px;
+    border-radius: 5px;
+    width: 20%;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+ul>li>a{
+    color: black;
+    text-decoration: none;
+}
+
+ul > li:hover{  /* animazione passaggio del mouse */
+     background-color: lightgreen;
+     border-color: green; 
+ }
+
+ p{
+     text-align: start;
+     color: black;
+ }
+
+ footer{
+     width: 98%;
+     border: 2px solid blue;
+     border-radius: 15px;
+     margin-left: 1%;
+ }
+
+ footer p{
+     text-align: center;
+     color: black;
+ }
+
+
+
+
+
+
+/*  19-09-13  */
+body /*tutti*/
+{
+  font-size: 100%;
+  font-family: sans-serif; /* stesso font */
+}
+
+h1 {
+  text-align: center;
+  width: 92%;
+  float: left;
+  margin: 2%;
+  padding: 2%;
+  color: green;
+  display: block; /* linea nuova di cui prende tutto lo spazio orizzontale */
+  border: none;
+  border: solid green 3px;
+  border-radius: 10px; /* tondeggiante */
+}
+
+legend{  /* testo legend */
+  text-align: center;
+  color: green;
+}
+
+label{
+    /* di base allinea a sinistra, posso ometterlo */
+  color: green;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 2px solid green; /* bordo inferiore, solid = continuo */
+    box-sizing: border-box;
+}
+
+input[type=submit] {  /* prende solo iil bottone tramite l'attributo type */
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*  19-07-05  */
+body
+{
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  width: 92%;
+  float: left;
+  margin: 2%;
+/*  margin-left: 2%;*/
+  padding: 2%;
+  color: blue;
+  display: block;
+  border: none;
+  border: solid blue 3px;
+  border-radius: 10px;
+}
+
+legend{
+  text-align: center;
+  color: blue;
+}
+
+label{
+  color: blue;
+}
+
+
+input{ /* tutti gli input, anche le textbox */
+  color: blue;
+  background-color: cyan;
+  border: none;
+  border-bottom: solid blue 1px;
+  border-right: solid blue 1px;
+}
+
+input.bottone{ /* prende oggetti con parametro class="bottone", l'abbiamo assegnato solo ai bottoni */
+  background-color: cyan;
+  color: blue;
+  font-weight: bold;  /* testo in grassetto */
+  text-align: center;
+  padding: 1%;
+  margin-top: 2%;
+  margin-left: 5%;
+  border-width: 3px;
+  border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+/*  19-02-01  */
+
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+  }
+  
+  section {
+    width: 96%;
+    margin: 1%;
+  }
+  
+  input[type="text"], input[type="select"], input[type="color"], input[type="email"], input[type="number"] { /*non so come il contenuto di questo metta i radio button a sinistra del testo ???*/
+    padding: 0.5%;
+    margin: 0.5%;
+    width: 96%;
+    border: solid green 2px;
+    border-radius: 5px;
+  }
+  
+  
+  input[type="reset"], input[type="submit"] {
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    width: 48%;
+    margin-top: 1%;
+    margin-left: 1%;
+    padding: 1%;
+  }
+  
+  input[type="reset"]:hover , input[type="submit"]:hover {
+    background-color: lightgreen;
+    font-weight: bold;
+    color: darkgreen;
+  }
+
+
+
+
+
+/* 18-09-18 */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h1{
+  color: green;
+  background-color: lightgreen;
+  border: green solid 2px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 180%;
+}
+
+h2{
+  font-style: italic;
+  color: green;
+  font-size: 140%;
+  text-align: start;
+  padding-left: 50px;
+}
+
+ul{
+  list-style: square;  /*quadrati al posto dei cerchi nella lista*/
+}
+
+figure{
+  text-align: center;
+}
+
+
+
+
+
+
+/* 18-07-06 */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+table{
+  border: solid black 2px;
+  border-collapse: collapse;
+}
+
+table th, table td{
+  border: solid grey 1px;
+}
+
+#carne{
+  background-color: lightyellow;
+}
+
+#fresca, #conservata{
+  background-color: lightcoral;
+}
+
+#bovino, #pollame, #suino{
+  background-color: lightskyblue;
+}
+
+
+
+
+
+
+
+/* 18-06-13 */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, legend{
+  background-color: darkblue;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px -5px 10px grey; /*ombreggiatura: x y sfocatura colore  (destra, alto, sfocato di grigio)*/
+}
+
+h1{
+  padding: 10px 0;
+}
+
+legend{
+  padding: 10px 1%;
+}
+
+form{
+  background-color: lightblue;
+  border: darkblue 2px solid;
+  border-radius: 6px;
+}
+
+label{
+  color: black;
+  display: block;
+  margin-top: 10px;
+}
+
+form > input{ /* =  input[type=submit], input[type=reset]  */
+  background-color: darkblue;
+  color: white;
+  font-size: 150%;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+/*sposto il primo elemento di quel tipo*/
+form > input:first-of-type{ /* =  input[type=submit], input[type=reset]:first-of-type  */
+  margin-left: 37%;
+}
+
+fieldset{
+  border:darkblue 2px solid;
+  margin-top: 20px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+
+
+
+/*    */
+
+/*    */

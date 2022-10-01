@@ -1,0 +1,283 @@
+ <!--APPUNTI-->
+
+ <!DOCTYPE html>
+ <html lang="it">
+     <head>
+         <title>Titolo pagina</title>
+         <link rel="stylesheet" type="text/css" href="esercizioCSS.css"/>
+     </head>
+     <body>
+         <h1>TITOLO Stampato</h1>
+         <form action="action.php" method="GET"> <!-- form che invia dati col metodo get-->
+
+            <table> <!-- thead(intestazione) e tbody(corpo) -->
+              <caption>Didascalia</caption>
+              <tr>  <!-- riga -->
+                  <td></td>  <!-- colonna normale (td) vuota -->
+                  <th id="studenti" colspan="5">studenti</th>   <!-- colonna titolo (th, testo in grassetto) che ne prende 5 (colspan="5") -->
+              </tr>
+              <tr>
+                <th id="primo">Primo</th> <!--th hanno id, td hanno header-->
+                <td headers="studenti primo secondo cesena" rowspan="2">100</td> <!-- colonna normale che prende 2 righe (rowspan="2") -->
+                <td headers="studenti primo imola">50</td>
+              </tr>
+            </table>
+
+            <ul> <!-- <ul> lista con pallini; <ol> lista con elementi ordinati 1,2,3..-->
+              <li>elemento lista 1</li>
+              <li>elemento lista 2</li>
+            </ul>
+
+            <section>
+              <h2>Musica</h2>
+              <img src="classifica.png" alt=""/>  <!-- immagine -->
+              <figcaption>Descrizione immagine</figcaption>  
+            </section>
+
+            <fieldset>
+              <legend>Titolo fieldset:</legend> 
+              <label>Nome: <input id="nome" name="nome" type="text" placeholder="Nome" autocomplete="off" required/></label> <!-- required = campo obbligatorio-->
+              <p><label>Numero: <input type="number" min="1" max="100" name="lettino"/></label></p>  <!-- val da 1 a 100 -->
+              <label><input name="radiocolor" type="radio" value="valore opzione"/>Opzione Radiobutton</label>
+              <label><input type="checkbox" name="policy1" value="policy1">Opzione Checkbox</label><br/> 
+            </fieldset>
+
+            <input class="bottone" type="reset" value="Cancella Form"/>
+            <input class="bottone" type="submit" value="Invia form"/> 
+         </form>
+     </body>
+ </html>
+     
+
+
+
+
+ <!-- 20-02-21 -->
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Esercizio HTML</title>
+        <link rel="stylesheet" type="text/css" href="esercizioCSS.css"/>
+    </head>
+    <body>
+        <h1>Iscrizione</h1>
+        <form action="action.php" method="GET"> <!-- form che invia dati col metodo get-->
+            <fieldset>
+                <legend>Informazioni Personali:</legend>
+
+                <label>Nome:*<input id="nome" name="nome" type="text" placeholder="Nome" autocomplete="off" required/></label> <!-- required = campo obbligatorio-->
+                <label>Cognome:*<input id="cognome" name="cognome" type="text" placeholder="Cognome" autocomplete="off" required/></label>
+                <label>Data di nascita:<input id="datanascita" name="datanascita" type="date" min="1900-01-01"/></label>  <!-- min = valore minimo-->
+            </fieldset>
+
+            <fieldset>
+                <legend>Informazioni Aggiuntive:</legend>
+
+                <label>Scegli un colore<input id="color" name="color" type="color" value="#ff0000"/></label>  <!-- seleziona colore -->
+                <p>Oppure scegli dalla lista:</p>
+                 <!-- radiobutton -->
+                <label><input name="radiocolor" type="radio" value="rosso" checked/>Rosso</label>  <!-- checked = già selezionato-->
+                <label><input name="radiocolor" type="radio" value="blu"/>Blu</label>
+                <label><input name="radiocolor" type="radio" value="verde"/>Verde</label>
+                <label><input name="radiocolor" type="radio" value="altro"/>Altro</label>
+            </fieldset>
+
+            <input id="submit" name="submit" type="submit"/>
+        </form>
+    </body>
+</html>
+
+ <!-- 20-01-29 -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Abbonamenti al trasporto pubblico</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="EsercizioCSS.css" /> <!--link css-->
+</head>
+<body>
+    <h1>Abbonamenti al trasporto pubblico</h1>
+    <section>
+        <h2>Studenti dei campus della Romagna</h2>
+    </section>
+    <table>
+        <caption>Abbonamenti nei campus</caption>  <!-- didascalia -->
+        <tr>  <!-- riga -->
+            <td></td>  <!-- colonna normale (td) vuota -->
+            <th id="studenti" colspan="5">studenti</th>   <!-- colonna titolo (th, testo in grassetto) che ne prende 5 (colspan="5") -->
+        </tr>
+        <tr>
+            <th id="semestre">Semestre</th>
+            <th id="cesena">Cesena</th>
+            <th id="forlì">Forlì</th>
+            <th id="imola">Imola</th>
+            <th id="ravenna">Ravenna</th>
+            <th id="rimini">Rimini</th>
+        </tr>
+        <tr>
+            <th id="primo">Primo</th>
+            <td headers="studenti primo secondo cesena" rowspan="2">100</td> <!-- colonna normale che prende 2 righe (rowspan="2") -->
+            <td headers="studenti primo secondo forlì" rowspan="2">200</td>
+            <td headers="studenti primo imola">50</td>
+            <td headers="studenti primo secondo ravenna" rowspan="2">500</td>
+            <td headers="studenti primo rimini">340</td>
+        </tr>
+        <tr>
+            <th id="secondo">Secondo</th>       <!--rimangono solo 2 colonne libere, le altre sono occupate dal rowspan-->
+            <td headers="studenti secondo imola">80</td>
+            <td headers="studenti secondo rimini">270</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+ <!-- 20-01-10 -->
+ <!DOCTYPE html>
+ <html lang ="it">
+ <head>
+     <title>Argomenti di tendenza 2019</title>
+     <meta charset="UTF-8"/>
+ </head>
+ <body>
+     <h1>Argomenti di tendenza 2019</h1>
+     <section>  <!-- sezione -->
+         <h2>TV e Cinema</h2>
+         <section>
+             <h3>Film</h3>
+         </section>
+         <section>
+             <h3>Serie TV</h3>
+         </section>
+     </section>
+     <section>
+         <h2>Musica</h2>
+         <img src="classifica.png" alt=""/>  <!-- immagine -->
+         <figcaption>Classifica canzoni cercate</figcaption>  <!-- descrizione immagine -->
+     </section>
+ </body>
+ 
+ </html>
+
+
+
+
+ <!-- 19-09-13 -->
+ <!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<title>StarWars</title>
+	<link href="esercizio_css.css" rel="stylesheet" type="text/css"/>
+	<script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="soluzione.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+		<h1>Personaggi Star Wars</h1>
+	</header>
+	<p></p>
+	<form action="index.php" method="post"> <!-- form che invia dati col metodo post-->
+		<fieldset> <!-- Gruppo di campi -->
+			<legend>Campi Personaggio</legend> <!--titolo gruppo -->
+			<label>Nome <input type="text" name="nome" /></label>
+			<label>Altezza <input type="number" name="altezza"/></label>
+			<label>Peso <input type="number" name="peso"/></label>
+		</fieldset>
+		<input class="bottone" type="submit" value="Aggiungi"/> <!--bottone -->
+	 </form>
+	<table></table>
+</body>
+</html>
+
+
+
+
+
+ <!-- 19-07-05 -->
+ <!DOCTYPE html>
+ <html>
+   <head>
+    <title>Esercizio HTML</title>
+    <link href="esercizio_css.css" rel="stylesheet" type="text/css"/>
+   </head>
+   <body>
+     <h1>Prenotazione Ombrellone</h1>
+     <form>
+       <fieldset> <!-- gruppo di campi -->
+         <legend>Campi Personali</legend>
+         <p><label>Nome <input type="text" placeholder="Nome"/></label></p> <!-- perche p ? -->
+         <p><label>Cognome <input type="text" placeholder="Cognome"/></label></p>
+         <p><label>Numero di lettini <input type="number" min="1" max="100" name="lettino"/></label></p>  <!-- val da 1 a 100 -->
+       </fieldset>
+ 
+       <fieldset>
+         <legend>Privacy policy</legend>
+         <label><input type="checkbox" name="policy1" value="policy1">Ho preso visione della privacy policy ed acconsento al trattamento dei dati</label><br/> 
+         <label><input type="checkbox" name="policy2" value="policy2">Iscriversi alla newsletter</label> <!-- checkbox -->
+       </fieldset>
+       <input class="bottone" type="reset" value="Cancella Form"/> <!-- bottone reset -->
+       <input class="bottone" type="submit" value="Prenota il tuo ombrellone"/> <!-- bottone submit -->
+     </form>
+   </body>
+ </html>
+ 
+
+
+
+
+
+
+  <!-- 20-02-21 -->
+  <!DOCTYPE html>
+  <html lang="it">
+    <head>
+      <meta charset="utf-8">
+      <title>Esercizio html</title>
+    </head>
+    <body>
+      <table>
+        <caption>Giornate agenda</caption>
+        <thead>
+          <tr>
+            <th id="Orario"></th>
+            <th id="Lunedì">Lunedì</th>
+            <th id="Martedì">Martedì</th>
+            <th id="Mercoledì">Mercoledì</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="Orario">9-11</td>
+            <td rowspan="2" headers="Lunedì">Riunione plenaria</td>
+            <td headers="Martedì">Lezione</td>
+            <td rowspan="2" headers="Mercoledì">Senato Accademico</td>
+          </tr>
+          <tr>
+            <td headers="Orario" >11-13</td>
+            <td headers="Martedì">Ricevimento</td>
+          </tr>
+          <tr>
+            <td headers="Orario">14-16</td>
+            <td headers="Lunedì">lezione</td>
+            <td headers="Martedì">Riunione progetto</td>
+            <td headers="Mercoledì">Lezione</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
+  
+
+
+
+
+ <!--  -->
+
+ <!--  -->
+
+
+ <!--  -->
+
+
+ <!--  -->
